@@ -1,0 +1,5 @@
+Kiến Thức tuần 3
+    + array
+    + class & object
+    + string, integer,boolean
+    + function

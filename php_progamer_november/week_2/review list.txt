@@ -1,0 +1,9 @@
+Kiến Thức tuần 2
+    + If - else
+    + switch - case
+    + foreach
+    + for loop
+    + while loop
+    + Do while loop
+    + Array
+    + string, integer, boolean

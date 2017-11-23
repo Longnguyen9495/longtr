@@ -1,0 +1,10 @@
+Kiến thức tuân 1:
++ Php Example
++ Php Echo, Print
++ Php Variable
++ php $ và $$
++ Php Constants
++ Php Magic Constants
++ Php Data types
++ Php Operators
++ Php Comments
