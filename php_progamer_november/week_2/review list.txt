@@ -6,4 +6,3 @@ Kiến Thức tuần 2
     + while loop
     + Do while loop
     + Array
-    + string, integer, boolean

@@ -1,4 +1,3 @@
-<meta chartset="utf-8">
 <?php
 echo '<h1>String | Interger | Boolean Php</h1>';
 $id = 0;
@@ -6,6 +5,8 @@ for ($id =1; $id<10;$id++)
 {
     echo $id.'<br>';
 }
+
+// khai báo các chuỗi string, integer
 $product =  "Tổng quát về gian hàng Vstore";
 $shopping_cart1 = "Website bất động sản";
 $shopping_cart2 = "Website đồ uống, ẩm thực & thời trang";
@@ -21,6 +22,7 @@ $productAll = $product.'<br>'.$shopping_cart1.'<br>'.$shopping_cart2.'<br>'.$sho
 $array_shopping_cart1 = $shopping_cart1.'<br>'.$detail_cart1.'<br>'.$count_Detail_cart1;
 $array_shopping_cart2 = $shopping_cart2.'<br>'.$detail_cart2.'<br>'.$count_Detail_cart2;
 $array_shopping_cart3 = $shopping_cart3.'<br>'.$detail_cart3.'<br>'.$count_Detail_cart3;
+
 echo '<h1>In chuỗi string</h1>';
 // in ra chuỗi string
 echo "<ul>$product";
@@ -29,23 +31,33 @@ echo "<li>$shopping_cart2</li>";
 echo "<li>$shopping_cart3</li>";
 echo "</ul>";
 echo '<h1>In hoa, in thường chuỗi string</h1>';
+
+
 // In hoa chuỗi string
 print_r(strtoupper($product).'<br>');
 echo '<br>';
+
+// In thường chuỗi string
 print_r(strtolower($product).'<br>');
 echo '<br>';
+
 // in hoa chữ cái đầu tiên | in thường chữ cái đầu tiên
 print_r(ucfirst($product).'<br>');
 echo '<br>';
 print_r(lcfirst($product).'<br>');
+
+
 echo '<h1>Đảo kí tự trong string</h1>';
 // Đảo chuỗi string
 print_r(strrev($product).'<br>');
+
+
 echo '<h1>Đếm độ dài kí tự trong string</h1>';
 // Đảo chuỗi string
 print_r('Có'.' '.(strlen($product)).' '.'Kí tự');
-echo '<h1>Chuyển đổi sang mảng array</h1>';
 
+
+echo '<h1>Chuyển đổi sang mảng array</h1>';
 $productSmartphone = "Iphone, Samsung, Nokia, Xiaomi";
 $stock = "22, 33, 45, 12";
 echo '<pre>';
