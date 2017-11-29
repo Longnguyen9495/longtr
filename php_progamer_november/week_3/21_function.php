@@ -1,5 +1,5 @@
 <?php
-    echo '<h3>Php Function</h3>';
+    echo '<h3>Php Func tion</h3>';
     // là tập hợp một đoạn mã và nó sẽ thực thi đoạn mã đó khi gọi hàm ra
     /** đếm độ đài giá trị value trong mảng
      * @param $key
