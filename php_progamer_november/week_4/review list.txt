@@ -1,3 +1,7 @@
 Kiến Thức tuần 4
     + class & object
     + function
+    + __construct & __destruct
+    + Interfaces
+    + Abstract
+    + Traits

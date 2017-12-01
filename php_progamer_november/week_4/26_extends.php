@@ -13,6 +13,10 @@
         {
             echo $this->var . '<br>';
         }
+        public function get()
+        {
+            echo $this->display();
+        }
     }
 
     // Lớp được kế thùa
