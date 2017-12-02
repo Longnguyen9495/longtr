@@ -79,16 +79,16 @@
 
     // Class
 
-    class Post implements Sociable {
-
-        use Sharable;
-
-        public function like()
-        {
-            //
-        }
-
-    }
+//    class Post implements Sociable {
+//
+//        use Sharable;
+//
+//        public function like()
+//        {
+//            //
+//        }
+//
+//    }
 
     /** Chúng ta có interface Sociable chỉ ra rằng đối tượng Post có thể like() và share(). Trong khi đó Sharable Trait implement phương thức share() và phương thức like() lại được implement bởi chính class Post.
 
