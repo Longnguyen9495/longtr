@@ -118,9 +118,9 @@
      */
 
 
-    class ConNguoi
+    class Autoload_2
     {
-        private static $name = 'ConNguoi';
+        private static $name = 'Autoload_2';
         public function __construct()
         {
 
@@ -142,6 +142,6 @@
             include_once $className . '.php';
         }
     }
-    ConNguoi::getName();
-    //Kết Quả: ConNguoi
+    Autoload_2::getName();
+    //Kết Quả: Autoload_2
 ?>
