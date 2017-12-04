@@ -1,0 +1,5 @@
+Kiến thức tuần 1 - Tháng 12
++ Objects equality
++ Object iteration
++ Auto-loading Classes
++ Magic methods
