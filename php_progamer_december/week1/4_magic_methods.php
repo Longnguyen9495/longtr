@@ -77,3 +77,7 @@
     }
 
     $obj = new MyDestructableClass();
+
+    echo '<br>';
+
+    echo "<h3></h3>";

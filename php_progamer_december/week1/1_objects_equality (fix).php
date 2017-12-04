@@ -1,6 +1,10 @@
 <?php
     echo "<h3>Object iteration</h3>";
     echo '<pre>';
+    /** So sánh các các đối tượng bằng giá trị thuộc tính của chúng và theo các loại. Hai giá trị bằng nhau nếu chúng thể hiện cùng một llowps có cùng các giá trị thuộc tính
+     * Toán tử nhận dạng bằng cú pháp "==="
+     */
+
 
     /**
      * Class myIterator
