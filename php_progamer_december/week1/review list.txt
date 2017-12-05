@@ -3,3 +3,7 @@ Kiến thức tuần 1 - Tháng 12
 + Object iteration
 + Auto-loading Classes
 + Magic methods
++ __call, __callstatic
++ __set
++ __get
++ __tostring

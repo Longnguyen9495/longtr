@@ -6,3 +6,9 @@
      * + __get()
      * + __set()
      */
+
+    echo "<h3>__set</h3>";
+
+    /** __set() Xuất hiện khi
+     *
+     */
