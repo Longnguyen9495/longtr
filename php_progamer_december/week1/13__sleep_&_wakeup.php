@@ -37,3 +37,66 @@
     echo "<h3>Example 2</h3>";
 
     # Example 2
+
+    class sleepWakeup {
+
+        public function __construct() {
+            // constructor //
+        }
+
+        public function __sleep() {
+            echo 'Time to sleep.';
+        }
+
+        public function __wakeup() {
+            echo 'Time to wakeup.';
+        }
+
+    }
+
+    $ob = new sleepWakeup();
+
+    // call __sleep method
+    echo $ob->__sleep();
+
+    echo "\n";
+
+    // call __wakeup method
+    echo $ob->__wakeup();
+
+    echo "<h3> __wakeup()</h3>";
+
+    /**
+     * Phương thức __wakeup() sẽ được gọi khi chúng ta unserialize() đối tượng.
+     * Chúng thường được sử dụng để thực thi một hoặc nhiều hành động nào đó khi đối tượng được unserialize
+     */
+
+    /**
+        public function __wakeup()
+            {
+            //code
+            }
+     */
+
+    class ConNguoi
+    {
+        private $name = 'Vũ Thanh Tài';
+        private $age = 20;
+        public function __sleep()
+        {
+            return array('name');
+        }
+        public function getName()
+        {
+            echo $this->name;
+        }
+        /**
+         * gọi hàm getName khi unserialize()
+         */
+        public function __wakeup(){
+            $this->getName();
+        }
+    }
+
+    unserialize(serialize(new ConNguoi()));
+    //Kết quả: Vũ Thanh Tài.
