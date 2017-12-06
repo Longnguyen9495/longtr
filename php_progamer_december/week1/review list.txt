@@ -7,3 +7,6 @@ Kiến thức tuần 1 - Tháng 12
 + __set
 + __get
 + __tostring
++ PHP Session Vs Cookies
++ PHP Session Configuration
++ PHP Session Encode Decode
