@@ -31,7 +31,7 @@
         <td><?php echo $value['id']?></td>
         <td><?php echo $value['name']?></td>
         <td><?php echo $value['year']?></td>
-        <td><a href="delete.php?id=<?php echo $value['id']?>">delete</a></td>
+        <td><a href="info/delete.php?id=<?php echo $value['id']?>">delete</a></td>
     </tr>
     <?php } ?>
     </tbody>
