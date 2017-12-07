@@ -40,7 +40,8 @@
     var_dump($_SESSION['start']);
     // Tính tổng số người trong start
     var_dump(count($_SESSION['start']));
-    // in cho anh cái
+    // in ra html
+    // xóa
 ?>
 <html>
 <head>
