@@ -6,4 +6,4 @@
     {
         unset($_SESSION['start'][$id]);
     }
-    header("location:insert.php");
+    header("location:inc_insert.php");
