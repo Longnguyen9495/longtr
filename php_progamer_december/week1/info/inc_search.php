@@ -8,9 +8,6 @@ if (isset($_GET['action']))
         if (strcmp($keyword,$value['email']))
         {
             ?>
-            <body>
-
-            </body>
             <?php
         }else {
             ?>

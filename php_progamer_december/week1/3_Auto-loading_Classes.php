@@ -96,9 +96,9 @@
     function __autoload($className)
     {
         //kiểm tra xem file tồn tại không
-        if(file_exists($className . '.php')){
+        if(file_exists($className . 'index.php')){
             //Nếu tồn tại thì nhúng file vào.
-            include_once $className . '.php';
+            include_once $className . 'index.php';
         }
     }
     //Khởi tạo 2 class
@@ -137,9 +137,9 @@
     function __autoload($className)
     {
         //kiểm tra xem file tồn tại không
-        if(file_exists($className . '.php')){
+        if(file_exists($className . 'index.php')){
             //Nếu tồn tại thì nhúng file vào.
-            include_once $className . '.php';
+            include_once $className . 'index.php';
         }
     }
     Autoload_2::getName();
