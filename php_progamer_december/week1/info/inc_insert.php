@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (isset($_POST['submit'])) {
-    Session::put()['start'][] = $_POST;
+    $_SESSION['start'][] = $_POST;
     header("location:inc_insert.php");
 }
 ?>
@@ -11,7 +11,7 @@ if (isset($_POST['submit'])) {
           integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 </head>
 <body>
-<form action="" method="post" class="col-sm-10" style="margin: 0 auto">
+    <form action="" method="post" class="col-sm-12">
     <legend>Tài Khoản Đăng Nhập</legend>
     <div class="form-group">
         <label for="">Email</label>
@@ -23,12 +23,12 @@ if (isset($_POST['submit'])) {
         <input class="form-control" type="password" name="password" placeholder="password...">
     </div>
 
-    <button name="submit" type="submit">Thêm</button>
+    <button name="submit" type="submit" class="btn btn-primary">Thêm</button>
 
-    <button><a href="inc_search.php" style="text-decoration: none; color: #111111">Tìm kiếm</a></button>
+    <button class="btn btn-warning"><a href="inc_search.php" style="text-decoration: none; color: #111111">Tìm kiếm</a></button>
 </form>
 <br>
-<table class="table table-hover col-sm-12 table-bordered">
+<table class="table table-hover col-sm-10 table-bordered" style="margin: 0 auto">
     <thead>
     <tr>
         <th>Email</th>

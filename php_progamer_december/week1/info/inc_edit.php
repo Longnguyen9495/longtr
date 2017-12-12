@@ -31,7 +31,7 @@ if (array_key_exists($id, $_SESSION['start']))
                name="password" placeholder="năm sinh....">
     </div>
 
-    <button name="submit" type="submit">Sửa</button>
+    <button class="btn-primary" name="submit" type="submit">Sửa</button>
 </form>
 </body>
 <?php

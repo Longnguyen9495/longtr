@@ -2,16 +2,11 @@
 session_start();
 if (isset($_GET['action'])) {
     $keyword = $_GET['search'];
+    $result = '';
     foreach ($_SESSION['start'] as $key => $value) {
-        if (strcmp($keyword, $value['email'])) {
+        if ($keyword === $value['email']) {
+            $result = $key;
             ?>
-            <body>
-
-            </body>
-            <?php
-        } else {
-            ?>
-            <body>
             <table class="table col-sm-12 table-bordered" style="margin: 0 auto;">
                 <thead>
                 <tr>
@@ -26,8 +21,11 @@ if (isset($_GET['action'])) {
                 </tr>
                 </tbody>
             </table>
-            </body>
-            <?php
+<?php
+            break;
+        } else {
+            $result = "<h3>ko</h3>";
+            echo
         }
     }
 }
@@ -41,12 +39,12 @@ if (isset($_GET['action'])) {
 <form action="" method="get" class="col-sm-10" style="margin: 0 auto;">
     <div class="form-group">
         <label for="">Tên tìm kiếm</label>
-        <input class="form-control" type="text" value="<?php echo $keyword ?>" name="search" placeholder="Tên tìm kiếm">
+        <input class="form-control" type="text" value="" name="search" placeholder="Tên tìm kiếm">
     </div>
 
-    <button type="submit" name="action">Tìm Kiếm</button>
+    <button type="submit" name="action" class="btn btn-primary">Tìm Kiếm</button>
 
-    <button><a href="inc_insert.php">Danh Sách</a></button>
+    <button class="btn btn-warning"><a href="inc_insert.php">Danh Sách</a></button>
 </form>
 
 </body>
