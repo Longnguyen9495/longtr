@@ -1,15 +1,15 @@
 <?php
 session_start();
-if (isset($_GET['action']))
-{
+if (isset($_GET['action'])) {
     $keyword = $_GET['search'];
-    foreach ($_SESSION['start'] as $key => $value)
-    {
-        if (strcmp($keyword,$value['email']))
-        {
+    foreach ($_SESSION['start'] as $key => $value) {
+        if (strcmp($keyword, $value['email'])) {
             ?>
+            <body>
+
+            </body>
             <?php
-        }else {
+        } else {
             ?>
             <body>
             <table class="table col-sm-12 table-bordered" style="margin: 0 auto;">
@@ -27,14 +27,15 @@ if (isset($_GET['action']))
                 </tbody>
             </table>
             </body>
-<?php
+            <?php
         }
     }
 }
 ?>
 <html>
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 </head>
 <body>
 <form action="" method="get" class="col-sm-10" style="margin: 0 auto;">

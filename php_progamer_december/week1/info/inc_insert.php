@@ -1,7 +1,14 @@
-
+<?php
+session_start();
+if (isset($_POST['submit'])) {
+    Session::put()['start'][] = $_POST;
+    header("location:inc_insert.php");
+}
+?>
 <html>
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 </head>
 <body>
 <form action="" method="post" class="col-sm-10" style="margin: 0 auto">
@@ -20,14 +27,6 @@
 
     <button><a href="inc_search.php" style="text-decoration: none; color: #111111">Tìm kiếm</a></button>
 </form>
-<?php
-session_start();
-if(isset($_POST['submit']))
-{
-    $_SESSION['start'][] = $_POST;
-    header("location:inc_insert.php");
-}
-?>
 <br>
 <table class="table table-hover col-sm-12 table-bordered">
     <thead>
